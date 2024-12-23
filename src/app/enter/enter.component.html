@@ -1,0 +1,18 @@
+<form class="auth-enter">
+    <a class="title-auth-a">Каталог продуктов</a>
+    <a class="auth-page-a1">Войдите или зарегистрируйтесь для доступа к информации</a>
+
+    <form (ngSubmit)="onLogin()">
+        <label for="username"><b>Имя пользователя</b></label>
+        <input type="text" placeholder="Введите имя пользователя"  name="username" required>
+      
+        <label for="password"><b>Пароль</b></label>
+        <input type="password" placeholder="Введите пароль"  name="password" required>
+
+    
+        <button class="ntne" type="submit">Войти</button>
+    </form>
+    
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Нет аккаунта, зарегистрируйтесь</button>
+    
+</form>

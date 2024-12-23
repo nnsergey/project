@@ -1,0 +1,60 @@
+.brand-name {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+
+img {
+    width: 500px; 
+    height: auto; 
+    max-width: 1600px; 
+    
+
+    }
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; 
+
+    padding-left: 20%;
+
+    button {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        color: #fff; 
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        outline: none;
+
+        &.enter {
+            background-color: #3498db; // Primary color
+
+            &:hover {
+                background-color: #2980b9; // Darker shade on hover
+                transform: translateY(-2px); // Lift effect
+            }
+        }
+
+        &.registration {
+            background-color: #2ecc71; // Secondary color
+
+            &:hover {
+                background-color: #27ae60; // Darker shade on hover
+                transform: translateY(-2px); // Lift effect
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        button {
+            width: 100%; 
+            margin: 5px 0; 
+        }
+    }
+}
